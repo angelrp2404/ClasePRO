@@ -36,6 +36,6 @@ public class Entrada {
             }
         });
 
-        garaje.getListaCoches().get(1).acelerar(100);
+        garaje.getListaCoches().get(0).acelerar(100);
     }
 }
