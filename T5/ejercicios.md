@@ -167,7 +167,7 @@ Desarrollar una clase Coche que tenga las siguientes características:
 	- La velocidad máxima del coche es 180, en el caso de superarla se pondrá el valor 180 y se mostrará un mensaje por pantalla
 - Un método frenar que reciba como parámetros un argumento de tipo int, que no retorne nada y realice la siguiente funcionalidad:
 	- Decrementa la velocidad en la cantidad pasada por parámetros
-	- La velocidad mínima del coche es 0, en el caso de superarla se pondrá el valor 180 y se mostrará un mensaje por pantalla
+	- La velocidad mínima del coche es 0, en el caso de superarla se pondrá el valor 0 y se mostrará un mensaje por pantalla
 - Un método parar que no recibirá nada por parámetros y que no devuelva nada. Su funcionalidad será la siguiente:
 	- Pondrá la velocidad del cocha a 0
 - Un método resetear que no reciba nada por parámetros y no devuelva nada. Su funcionalidad será la siguiente:
@@ -183,9 +183,9 @@ Desarrollar una clase Entrada que represente el punto de entrada de la aplicaci�
 	- (CocheA) Uno con el constructor por defectoç
 	- (CocheB) Uno pasando modelo, matricula y caballos
 - Muestra por pantalla los datos de los dos coches
-- Modifica la velocidad del CocheA en un número aleatorio entre 10 y 30
-- Modifica los datos del CocheB y por
+- Modifica los datos del CocheA y por
 	- Modelo, Matricula y CV
+- Modifica la velocidad del CocheA en un número aleatorio entre 10 y 30
 - Modifica la velocidad del CocheB en un número aleatorio entre 10 y 30
 - Muestra por pantalla los datos de los dos coches
 - Imprime por pantalla el siguiente mensaje, teniendo en cuenta que el coche ganador será el que más km haya recorrido
@@ -247,16 +247,28 @@ Modificar la clase Equipo para que tenga:
 - Un método que no devuelva nada y que pida por parámetros un objeto de tipo jugador. El método agregará a la lista de jugadores el pasado por parámetros
 - Un método que sea listarDelateros que no devuelva nada y muestre por consola los datos de los delantros
 
+Crear una clase partido que tenga los siguientes atributos;
+- Dos atributos de tipo equipo
+- un atibuto de tipo boolean. Representa si el partido se esta jugando o está terminado
+- un atributo de tipo int. Representa en que parte está
+- Un constructor con los dos equipos pasados por parámetros
+- Un método iniciarPartido: realiza tres ataques por cada parte
+- Un método mostrarResultado: muestra el resultado final del partido: EquipoA  XX - Equipo B XX 
+
+Implementar una funcionalidad para:
+
+- Cuando un equipo ataca marcará gol cuando su método atacar sea true y su niven de ataque sea mayor que el nivel de defensa del contrario
 	
 7. (ConsumicionAplicacion) 
 
-Créese una clase de nombre “Cuenta” que permita realizar pedidos. Para eso crea una clase "consumición "Cuenta"" que tenga los siguientes métodos y atributos:
+Créese una clase de nombre “Cuenta” que permita realizar pedidos que tenga los siguientes métodos y atributos:
 
 - Tendrá un atributo de tipo int "Identificador"
 - Tendrá un atributo de tipo boolean "Estado"
 - Tendrá un atributo de tipo "ArrayList" donde se guardarán Artículos
+- Crear un constructor que pida el identificador.
 - Crear un método que permita agregar un artículo a la lista
-- Crear un método que retorne el número de artículos que tiene la consumición 
+- Crear un método que retorne el número de artículos que tiene la cuenta 
 - Crear un método que retorne el coste total de la consumición.
 - Crear un setter para el atributo estado
 
@@ -326,7 +338,7 @@ Crear una clase entrada que tenga:
 - Agregar los tres surtidores a la gasolinera   
 - Crear un coche con tipo de gasolina 
 - Ejecutar el método ponerGasolina del coche (respotando una cantidad concreta). 
-	- Prueba todas las convinanciones para comprobar los posibles fallos del método.
+	- Prueba todas las combinación para comprobar los posibles fallos del método.
 
 10. (IMC)
 
